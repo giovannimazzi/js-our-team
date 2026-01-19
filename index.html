@@ -58,17 +58,48 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <div class="container p-5 debug">
+    <div class="container p-5">
       <header>
         <h1 class="fw-bold">Meet our Team</h1>
-        <p class="h5 mt-5">
+        <p class="h5 mt-5 text-justify">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aut odit,
           voluptates minima eius, perspiciatis a nobis porro fuga libero
           accusamus facilis vitae voluptatem tempora sunt! Consequuntur nesciunt
           beatae provident.
         </p>
       </header>
-      <main class="mt-5">cards</main>
+      <main class="mt-5">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 gy-2 justify-content-center"
+        >
+          <div class="col" style="max-width: 400px">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-xl-4 d-flex justify-content-center">
+                  <img
+                    src="./assets/img/female1.png"
+                    class="img-fluid"
+                    alt="female1"
+                  />
+                </div>
+                <div class="col-xl-8">
+                  <div class="card-body text-center text-xl-start">
+                    <h5 class="card-title fw-bold fs-4 mb-1">LAURA ROSSI</h5>
+                    <p class="card-text fs-5 mb-2">Front-end Developer</p>
+                    <p class="card-text fs-5">
+                      <a
+                        class="text-decoration-none"
+                        href="mailto:laurarossi@team.com"
+                        >laurarossi@team.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

@@ -1,8 +1,30 @@
 * {
   font-family: "Fredoka", sans-serif;
+}
+
+header {
   text-align: center;
 }
 
 h1 {
   color: #e53170;
+}
+
+.card {
+  border: 0px;
+  border-radius: 0%;
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: #68c3e5;
+}
+
+a:hover {
+  color: cyan;
+}
+
+.card-body {
+  padding: 13px;
 }
