@@ -39,3 +39,16 @@ const teamMembers = [
 
 // stampa delle cards in pagina
 printCards();
+
+// inserimento nuovo membro
+const newMemberInputForm = document.getElementById("new-member-input-form");
+newMemberInputForm.addEventListener("submit", (e) => {
+  // prevenzione invio dati
+  e.preventDefault();
+
+  // funzione che gestisce l'inserimento
+  addNewMember();
+
+  // aggiornamento della schermata
+  printCards();
+});

@@ -60,3 +60,38 @@ function generateCard(member) {
 
   return cardTemplateHTML;
 }
+
+function addNewMember() {
+  const newMemberInputName = document.getElementById("input-name");
+  const newMemberInputRole = document.getElementById("input-role");
+  const newMemberInputEmail = document.getElementById("input-email");
+
+  const name = capitalize(newMemberInputName.value.trim());
+  const role = capitalize(newMemberInputRole.value.trim());
+  const email = newMemberInputEmail.value.trim().toLowerCase();
+  const img = "img/new_member.png";
+
+  teamMembers.push({ name, role, email, img });
+
+  newMemberInputName.value = "";
+  newMemberInputRole.value = "";
+  newMemberInputEmail.value = "";
+}
+
+/**
+ * This function receives a string as a name and returns the capitalized version:
+ * first char of each word in uppercase and the rest in lowercase.
+ * @param {string} name The string to capitalize
+ * @returns {string} The capitalized string
+ */
+const capitalize = (name) => {
+  if (!name) return "";
+  if (name.includes(" ")) {
+    return name
+      .split(" ")
+      .map((el) => el.charAt(0).toUpperCase() + el.slice(1).toLowerCase())
+      .join(" ");
+  } else {
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+  }
+};

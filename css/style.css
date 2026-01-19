@@ -10,11 +10,19 @@ h1 {
   color: #e53170;
 }
 
+h2 {
+  color: #881357;
+}
+
 .card {
   border: 0px;
   border-radius: 0%;
   background-color: black;
   color: white;
+}
+
+.card img {
+  background-color: yellow;
 }
 
 a {
@@ -23,4 +31,22 @@ a {
 
 a:hover {
   color: cyan;
+}
+
+.col {
+  max-width: 400px;
+}
+
+#new-member-input {
+  border: 1px solid #881357;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+@media (min-width: 576px) {
+  /* sm */
+  .col {
+    max-width: unset;
+    min-width: 400px;
+  }
 }
