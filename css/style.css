@@ -41,6 +41,7 @@ a:hover {
   border: 1px solid #881357;
   border-radius: 25px;
   background-color: whitesmoke;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -48,5 +49,9 @@ a:hover {
   .col {
     max-width: unset;
     min-width: 400px;
+  }
+
+  #new-member-input {
+    width: 576px;
   }
 }
